@@ -1,0 +1,37 @@
+{
+  "projects": ["teste"],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Infra"
+    },
+    {
+      "id": 2,
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": 3,
+      "name": "Web"
+    },
+    {
+      "id": 4,
+      "name": "Mobile"
+    },
+    {
+      "id": 5,
+      "name": "Design"
+    },
+    {
+      "id": 6,
+      "name": "Planejamento"
+    },
+    {
+      "id": 7,
+      "name": "Marketing"
+    },
+    {
+      "id": 8,
+      "name": "Outros"
+    }
+  ]
+}

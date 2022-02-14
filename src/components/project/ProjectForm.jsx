@@ -4,7 +4,11 @@ import Select from "../form/Select";
 import SubmitButton from "../form/SubmitButton";
 import styles from "./ProjectForm.module.css";
 
+import { useFetch } from "../hooks/useFetch";
+
 export default function ProjectForm({ btnText }) {
+  const { data: categories } = useFetch("/categories");
+
   return (
     <form className={styles.form}>
       <Input
@@ -19,7 +23,11 @@ export default function ProjectForm({ btnText }) {
         name="budget"
         placeholder="Insira o orçamento total"
       />
-      <Select name="category_id" text="Selecione a categoria" />
+      <Select
+        name="category_id"
+        text="Selecione a categoria"
+        options={categories}
+      />
       <SubmitButton text={btnText} />
     </form>
   );

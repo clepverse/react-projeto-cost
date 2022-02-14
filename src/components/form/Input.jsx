@@ -18,7 +18,7 @@ export default function Input({
         name={name}
         placeholder={placeholder}
         onChange={handleOnChange}
-        value={name}
+        value={value}
       />
     </div>
   );
