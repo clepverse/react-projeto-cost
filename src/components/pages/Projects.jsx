@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useLocation } from "react-router-dom";
 import Message from "../layout/Message";
 import styles from "./Projects.module.css";
@@ -6,6 +6,7 @@ import Container from "../layout/Container";
 import LinkButton from "../layout/LinkButton";
 import ProjectCard from "../project/ProjectCard";
 import { useFetch } from "../hooks/useFetch";
+import Loading from "../layout/Loading";
 
 export default function Projects() {
   const location = useLocation();
@@ -14,7 +15,7 @@ export default function Projects() {
     message = location.state.message;
   }
 
-  const { data: projects } = useFetch("/projects");
+  const { data: projects, removeLoading } = useFetch("/projects");
   console.log("Projetos carregados com sucesso: ", projects);
 
   return (
@@ -35,6 +36,10 @@ export default function Projects() {
               category={project.category.name}
             />
           ))}
+        {!removeLoading && <Loading />}
+        {removeLoading && projects.length === 0 && (
+          <Message type="info" msg="Nenhum projeto encontrado" />
+        )}
       </Container>
     </div>
   );

@@ -1,4 +1,5 @@
 import axios from "axios";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const api = axios.create({
@@ -6,6 +7,7 @@ const api = axios.create({
 });
 export function usePost(url) {
   const navigate = useNavigate();
+  const [error, setError] = useState(null);
 
   const createPost = (project) => {
     //Inicializa
@@ -22,8 +24,8 @@ export function usePost(url) {
         console.log(res);
       })
       //Retorna erro
-      .catch((error) => {
-        console.log(error + "Erro ao criar projeto");
+      .catch((err) => {
+        setError(err);
       });
   };
 

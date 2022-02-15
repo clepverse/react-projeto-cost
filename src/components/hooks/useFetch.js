@@ -6,6 +6,8 @@ const api = axios.create({
 });
 
 export function useFetch(url) {
+  const [removeLoading, setRemoveLoading] = useState(false);
+  const [error, setError] = useState(null);
   const [data, setData] = useState([]);
   useEffect(() => {
     api
@@ -16,10 +18,13 @@ export function useFetch(url) {
         setData(dados);
       })
       //Retorna erro
-      .catch((error) => {
-        console.log(error + "Erro ao carregar dados");
+      .catch((err) => {
+        setError(err);
+      }) //Loading svg
+      .finally(() => {
+        setRemoveLoading(true);
       });
   }, []);
 
-  return { data };
+  return { data, removeLoading, error };
 }
