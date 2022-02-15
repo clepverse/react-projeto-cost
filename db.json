@@ -1,5 +1,28 @@
 {
-  "projects": ["teste"],
+  "projects": [
+    {
+      "name": "dasdasdasdasd",
+      "budget": "213424324",
+      "category": {
+        "id": "Desenvolvimento",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "Metaverse-challenge",
+      "budget": "100000",
+      "category": {
+        "id": "Desenvolvimento",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    }
+  ],
   "categories": [
     {
       "id": 1,

@@ -10,11 +10,13 @@ export function useFetch(url) {
   useEffect(() => {
     api
       .get(url)
+      //Solicita dados
       .then((response) => {
         const categoriesDados = response.data;
         setData(categoriesDados);
         console.log("Dados carregados com sucesso" + categoriesDados);
       })
+      //Retorna erro
       .catch((error) => {
         console.log(error + "Erro ao carregar categorias");
       });
