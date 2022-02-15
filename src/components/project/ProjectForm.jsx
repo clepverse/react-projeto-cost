@@ -10,6 +10,7 @@ export default function ProjectForm({ handleSubmit, btnText, projetData }) {
   const [project, setProject] = useState(projetData || {});
 
   const { data: categories } = useFetch("/categories");
+  console.log("Categorias carregados com sucesso:", categories);
 
   const submit = (e) => {
     e.preventDefault();

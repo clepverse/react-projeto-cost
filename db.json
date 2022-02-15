@@ -1,8 +1,8 @@
 {
   "projects": [
     {
-      "name": "dasdasdasdasd",
-      "budget": "213424324",
+      "name": "Metaverse-challenge",
+      "budget": "100000",
       "category": {
         "id": "Desenvolvimento",
         "name": "Desenvolvimento"
@@ -12,8 +12,8 @@
       "id": 1
     },
     {
-      "name": "Metaverse-challenge",
-      "budget": "100000",
+      "name": "projeto teste",
+      "budget": "1000000",
       "category": {
         "id": "Desenvolvimento",
         "name": "Desenvolvimento"
@@ -21,6 +21,28 @@
       "cost": 0,
       "services": [],
       "id": 2
+    },
+    {
+      "name": "projeto teste2000",
+      "budget": "10000",
+      "category": {
+        "id": "Design",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "name": "novo projeto",
+      "budget": "1000",
+      "category": {
+        "id": "Mobile",
+        "name": "Mobile"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
     }
   ],
   "categories": [

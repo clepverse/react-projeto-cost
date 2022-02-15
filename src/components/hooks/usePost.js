@@ -5,18 +5,20 @@ const api = axios.create({
   baseURL: "http://localhost:3004",
 });
 export function usePost(url) {
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   const createPost = (project) => {
     //Inicializa
     project.cost = 0;
     project.services = [];
 
-    //Solicita criar POST
+    //Requisição POST
     api
       .post(url, project)
       .then((res) => {
-        history("/projects"), { message: "Projeto criado com sucesso!" };
+        navigate("/projects", {
+          state: { message: "Projeto criado com sucesso!" },
+        });
         console.log(res);
       })
       //Retorna erro
