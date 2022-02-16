@@ -1,16 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Input from "../form/Input";
 import Select from "../form/Select";
 import SubmitButton from "../form/SubmitButton";
 import styles from "./ProjectForm.module.css";
+import axios from "axios";
 
-import { useFetch } from "../hooks/useFetch";
+// import { useFetch } from "../hooks/useFetch";
 
-export default function ProjectForm({ handleSubmit, btnText, projetData }) {
-  const [project, setProject] = useState(projetData || {});
+const api = axios.create({
+  baseURL: "http://localhost:3004",
+});
 
-  const { data: categories } = useFetch("/categories");
-  console.log("Categorias carregados com sucesso:", categories);
+export default function ProjectForm({ handleSubmit, btnText, projectData }) {
+  const [project, setProject] = useState(projectData || {});
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    api("/categories")
+      .then((res) => setCategories(res.data))
+      .catch((err) => console.log(err));
+  }, []);
+
+  // const { data: categories } = useFetch("/categories");
+  // console.log("Categorias carregados com sucesso:", categories);
 
   const submit = (e) => {
     e.preventDefault();
@@ -40,7 +52,7 @@ export default function ProjectForm({ handleSubmit, btnText, projetData }) {
         name="name"
         placeholder="Insira o nome do projeto"
         handleOnChange={handleChange}
-        value={project.name ? project.name : ""}
+        value={project.name}
       />
       <Input
         type="number"
@@ -48,7 +60,7 @@ export default function ProjectForm({ handleSubmit, btnText, projetData }) {
         name="budget"
         placeholder="Insira o orçamento total"
         handleOnChange={handleChange}
-        value={project.budget ? project.budget : ""}
+        value={project.budget}
       />
       <Select
         name="category_id"

@@ -2,13 +2,38 @@
   "projects": [
     {
       "name": "Metaverse-challenge",
-      "budget": "10000",
+      "budget": "1000",
       "category": {
-        "id": "Desenvolvimento",
-        "name": "Desenvolvimento"
+        "id": "Web",
+        "name": "Web"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 800,
+      "services": [
+        {
+          "name": "Metaverse",
+          "cost": "200",
+          "description": "asdadsad",
+          "id": "88ade074-ec4f-47b0-a20a-adb388fcd663"
+        },
+        {
+          "name": "servico teste",
+          "cost": "300",
+          "description": "asdadsad",
+          "id": "fbcb4cc1-c17f-4688-b218-2b5767610733"
+        },
+        {
+          "name": "aweqeq",
+          "cost": "200",
+          "description": "asdadsad",
+          "id": "71806d1a-fbf9-405a-9003-6e66208cc3bc"
+        },
+        {
+          "name": "test",
+          "cost": "100",
+          "description": "dasdad",
+          "id": "906a2725-14bd-42a8-be0f-d47b99326002"
+        }
+      ],
       "id": 1
     },
     {
