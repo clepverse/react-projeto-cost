@@ -1,17 +1,5 @@
 {
-  "projects": [
-    {
-      "name": "Metaverse-challenge",
-      "budget": "2000000",
-      "category": {
-        "id": "Web",
-        "name": "Web"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    }
-  ],
+  "projects": [],
   "categories": [
     {
       "id": 1,
