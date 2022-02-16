@@ -1,5 +1,28 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "Metaverse-challenge",
+      "budget": "10000",
+      "category": {
+        "id": "Desenvolvimento",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "projeto teste",
+      "budget": "1323232",
+      "category": {
+        "id": "Mobile",
+        "name": "Mobile"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    }
+  ],
   "categories": [
     {
       "id": 1,

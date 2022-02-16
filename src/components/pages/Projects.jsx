@@ -41,8 +41,8 @@ export default function Projects() {
   const removeProject = (id) => {
     api
       .delete(`/projects/${id}`)
-      .then((response) => {
-        const dados = response.data;
+      .then((res) => {
+        const dados = res.data;
         console.log(dados);
       })
       .then(() => {
@@ -52,9 +52,6 @@ export default function Projects() {
       .catch((err) => {
         setError(err);
         console.log(error);
-      })
-      .finally(() => {
-        setRemoveLoading(true);
       });
   };
 
