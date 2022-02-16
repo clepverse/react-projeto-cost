@@ -7,7 +7,7 @@
         "id": "Web",
         "name": "Web"
       },
-      "cost": 844,
+      "cost": 1000,
       "services": [
         {
           "name": "Metaverse",
@@ -16,54 +16,19 @@
           "id": "88ade074-ec4f-47b0-a20a-adb388fcd663"
         },
         {
-          "name": "servico teste",
-          "cost": "300",
-          "description": "asdadsad",
-          "id": "fbcb4cc1-c17f-4688-b218-2b5767610733"
-        },
-        {
           "name": "aweqeq",
           "cost": "200",
           "description": "asdadsad",
           "id": "71806d1a-fbf9-405a-9003-6e66208cc3bc"
         },
         {
-          "name": "test",
-          "cost": "100",
-          "description": "dasdad",
-          "id": "906a2725-14bd-42a8-be0f-d47b99326002"
-        },
-        {
-          "name": "dasdsadsa",
-          "cost": "22",
-          "description": "fdsfdsfsd",
-          "id": "823c7566-b365-42df-9f5e-d94edb601735"
-        },
-        {
-          "name": "dasdsadsaasda",
-          "cost": "21",
-          "description": "fdsfdsfsddas",
-          "id": "a544c19a-4d1a-4533-bbb2-c25364b216e5"
-        },
-        {
-          "name": "test12121",
-          "cost": "1",
-          "description": "asdadsa",
-          "id": "b7c9f038-ef17-4933-a6a7-d69b82d089d4"
+          "name": "serviço teste",
+          "cost": "600",
+          "description": "asdadsad",
+          "id": "5d52c75b-d4b9-48a2-a445-fee98a7d678c"
         }
       ],
       "id": 1
-    },
-    {
-      "name": "projeto teste",
-      "budget": "1323232",
-      "category": {
-        "id": "Mobile",
-        "name": "Mobile"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
     }
   ],
   "categories": [

@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Company() {
-  return <h1>Company</h1>;
+  return <h1>Cost company</h1>;
 }

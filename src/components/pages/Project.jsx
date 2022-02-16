@@ -94,7 +94,26 @@ export default function Project() {
       });
   };
 
-  const removeService = () => {};
+  const removeService = (id, cost) => {
+    const servicesUpdated = project.services.filter(
+      (service) => service.id !== id
+    );
+
+    const projectUpdated = project;
+
+    projectUpdated.services = servicesUpdated;
+    projectUpdated.cost = parseFloat(project.cost) - parseFloat(cost);
+
+    api
+      .patch(`/projects/${projectUpdated.id}`, projectUpdated)
+      .then(() => {
+        setProject(projectUpdated);
+        setServices(servicesUpdated);
+        setMessage("Serviço removido com sucesso");
+        setType("success");
+      })
+      .catch((err) => console.log(err));
+  };
 
   const toggleProjectForm = () => {
     setShowProjectForm(!showProjectForm);

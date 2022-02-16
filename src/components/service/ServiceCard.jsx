@@ -9,7 +9,10 @@ export default function ServiceCard({
   description,
   handleRemove,
 }) {
-  const remove = (e) => {};
+  const remove = (e) => {
+    e.preventDefault();
+    handleRemove(id, cost);
+  };
   return (
     <div className={styles.project_card}>
       <h4>{name}</h4>
