@@ -7,7 +7,7 @@
         "id": "Web",
         "name": "Web"
       },
-      "cost": 800,
+      "cost": 844,
       "services": [
         {
           "name": "Metaverse",
@@ -32,6 +32,24 @@
           "cost": "100",
           "description": "dasdad",
           "id": "906a2725-14bd-42a8-be0f-d47b99326002"
+        },
+        {
+          "name": "dasdsadsa",
+          "cost": "22",
+          "description": "fdsfdsfsd",
+          "id": "823c7566-b365-42df-9f5e-d94edb601735"
+        },
+        {
+          "name": "dasdsadsaasda",
+          "cost": "21",
+          "description": "fdsfdsfsddas",
+          "id": "a544c19a-4d1a-4533-bbb2-c25364b216e5"
+        },
+        {
+          "name": "test12121",
+          "cost": "1",
+          "description": "asdadsa",
+          "id": "b7c9f038-ef17-4933-a6a7-d69b82d089d4"
         }
       ],
       "id": 1
