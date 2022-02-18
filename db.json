@@ -1,34 +1,26 @@
 {
   "projects": [
     {
-      "name": "Metaverse-challenge",
-      "budget": "1000",
+      "name": "joguinho mmorpg",
+      "budget": "10000",
+      "category": {
+        "id": "Jogos",
+        "name": "Jogos"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "name": "fsdfdsfsfds",
+      "budget": "122121",
       "category": {
         "id": "Web",
         "name": "Web"
       },
-      "cost": 1000,
-      "services": [
-        {
-          "name": "Metaverse",
-          "cost": "200",
-          "description": "asdadsad",
-          "id": "88ade074-ec4f-47b0-a20a-adb388fcd663"
-        },
-        {
-          "name": "aweqeq",
-          "cost": "200",
-          "description": "asdadsad",
-          "id": "71806d1a-fbf9-405a-9003-6e66208cc3bc"
-        },
-        {
-          "name": "serviço teste",
-          "cost": "600",
-          "description": "asdadsad",
-          "id": "5d52c75b-d4b9-48a2-a445-fee98a7d678c"
-        }
-      ],
-      "id": 1
+      "cost": 0,
+      "services": [],
+      "id": 5
     }
   ],
   "categories": [
@@ -50,7 +42,7 @@
     },
     {
       "id": 5,
-      "name": "Design"
+      "name": "Jogos"
     },
     {
       "id": 6,
