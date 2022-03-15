@@ -13,13 +13,20 @@
     },
     {
       "name": "fsdfdsfsfds",
-      "budget": "122121",
+      "budget": "1221212121",
       "category": {
         "id": "Web",
         "name": "Web"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 32,
+      "services": [
+        {
+          "name": "sdasdasd",
+          "cost": "32",
+          "description": "21212121",
+          "id": "436fbced-9836-4051-8ae0-2b8a1f49885e"
+        }
+      ],
       "id": 5
     }
   ],
